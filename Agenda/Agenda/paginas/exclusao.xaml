@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.paginas.exclusao">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Bisque" Padding="30">
+            <Image Source="botao_excluir.png" WidthRequest="150" HeightRequest="150"/>
+            <Label Text="Exclusão de Alunos da Agenda" FontFamily="Times new roman" HorizontalOptions="CenterAndExpand"
+                FontSize="Large"
+                TextColor="DarkBlue"/>
+            <Label Text="Digite o ID:" FontSize="Medium"
+                TextColor="#3333FF"/>
+            <Entry x:Name="txt_id"/>
+            <Button Text="Excluir" x:Name="btn_excluir" FontSize="Medium"
+                TextColor="Red" CornerRadius="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

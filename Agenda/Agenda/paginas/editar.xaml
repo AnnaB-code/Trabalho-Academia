@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.paginas.editar">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="DarkBlue" Padding="30">
+            <Image Source="agendacapa.png" WidthRequest="150" HeightRequest="150"/>
+            <Label Text="Alteração de Alunos da Agenda" FontFamily="Times new roman"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"
+                TextColor="White"/>
+            <Label Text="Digite o ID: " FontSize="Medium"
+                TextColor="#3333FF"/>
+            <Entry x:Name="txt_id" FontSize="Medium"
+                TextColor="Black"/>
+            <Label Text="Nome: " FontSize="Medium"
+                TextColor="#3333FF"/>
+            <Entry x:Name="txt_nome" FontSize="Medium"
+                TextColor="Black"/>
+            <Label Text="Endereço: " FontSize="Medium"
+                TextColor="#3333FF"/>
+            <Entry x:Name="txt_ende" FontSize="Medium"
+                TextColor="Black"/>
+            <Label Text="Telefone: " FontSize="Medium"
+                TextColor="#3333FF"/>
+            <Entry x:Name="txt_fone" FontSize="Medium"
+                TextColor="Black"/>
+            <Label Text="Idade: " FontSize="Medium"
+                TextColor="#3333FF"/>
+            <Entry x:Name="txt_idade" FontSize="Medium"
+                TextColor="Black"/>
+            <Button Text="Editar" x:Name="btn_editar" FontSize="Medium"
+                TextColor="RED" CornerRadius="20"/>
+        </StackLayout>
+</ScrollView>
+    </ContentPage.Content>
+</ContentPage>

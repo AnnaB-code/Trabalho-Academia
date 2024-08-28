@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.paginas.inicial">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#FFE5CC" Padding="30">
+            <Image Source="botao_inserir.png" HorizontalOptions="CenterAndExpand" WidthRequest="150" HeightRequest="150"/>
+            <Label Text="Inclusão de Alunos" FontFamily="Times new roman"    
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Large"
+                TextColor="#3333FF"/>
+            <Label Text="Nome: " FontSize="Medium"
+                TextColor="DarkMagenta"/>
+            <Entry x:Name="txt_nome"  FontSize="Medium"
+                TextColor="DarkBlue"/>
+            <Label Text="Endereço: " FontSize="Medium"
+                TextColor="DarkMagenta"/>
+            <Entry x:Name="txt_ende" FontSize="Medium"
+                TextColor="DarkBlue"/>
+            <Label Text="Fone: " FontSize="Medium"
+                TextColor="DarkMagenta"/>
+            <Entry x:Name="txt_fone" FontSize="Medium"
+                TextColor="DarkBlue"/>
+            <Label Text="Idade: " FontSize="Medium"
+                TextColor="DarkMagenta"/>
+            <Entry x:Name="txt_idade" FontSize="Medium"
+                TextColor="DarkBlue"/>
+            <Button Text="Enviar" x:Name="btn_enviar" FontSize="Medium"
+                TextColor="DarkGreen" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" CornerRadius="20"/>
+        </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

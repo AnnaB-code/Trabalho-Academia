@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.paginas.pesquisar">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Bisque" Padding="30">
+            <Image Source="agendacapa.png" WidthRequest="100" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Pesquisa de Alunos"  
+            VerticalOptions="Center"
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Large"
+            TextColor="#3333FF"/>
+            <Entry x:Name="txtPesquisar" Placeholder="Digite o nome:"/>
+            <Button Text="Pesquisar" x:Name="btn_pesquisar"
+                FontSize="Large" TextColor="DarkBlue" CornerRadius="15"/>
+            <ListView x:Name="ls_alunos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nome}" FontSize="Medium" TextColor="Black"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Ende}" FontSize="Medium" TextColor="Black"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Fone}" FontSize="Medium" TextColor="Black"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Idade}" FontSize="Medium" TextColor="Black"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
